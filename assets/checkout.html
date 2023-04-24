@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Era</title>
+    <link rel="shortcut icon" href="../assets/img/iconlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="./js/toast.js"></script>
+    <script src="./js/checkmail.js"></script>
+    <script src="./js/checkout.js"></script>
+
+</head>
+
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <!-- Navbar -->
+                <nav class="header__navbar">
+                    <div class="header__logo">
+                        <a href="../index.html" class="header__logo-link">
+                            <img src="../assets/img/logo.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+
+                    <ul class="header__navbar-list hide-on-mobile-tablet">
+                        <li class="header__navbar-item">
+                            <a href="#gift" class="header__navbar-link">Gift</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#newarrivals" class="header__navbar-link">New Arrivals</a>
+                            <div class="new__img">
+                                <img src="../assets/img/new.png" alt="" class="header__navbar-link-new">
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#brand" class="header__navbar-link">Brand</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#trending" class="header__navbar-link">Trending Collection</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#reviews" class="header__navbar-link">Reviews</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-fonticon">
+
+                        <li class="header__navbar-fonticon-list header__wrap">
+                            <div class="header__navbar-fonticon-link icon__wrap">
+                                <a href="cart.html">
+                                    <i class="header__navbar-fonticon-icon fa-solid fa-cart-shopping"></i>
+                                    <span class="header__icon-notice">3</span>
+                                </a>
+
+                                <!-- No icon class = header__icon-list--no-icon -->
+                                <div class="header__list">
+                                    <img src="../assets/img/no-cart.png" alt="" class="header__icon-list--no-icon header__icon-no-icon-img">
+                                    <span class="header__icon-list--no-icon header__icon-list--no-icon-msg">Chưa có sản phẩm</span>
+
+                                    <!-- Have icon -->
+                                    <h4 class="header__icon-heading">Product added</h4>
+                                    <ul class="header__icon-list-items">
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/treding3.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <div class="header__icon-item-head">
+                                                    <h5 class="header__icon-item-name">Multi Purpose Jacket</h5>
+                                                    <div class="header__icon-item-price-wrap">
+                                                        <span class="header__icon-item-price">$510</span>
+                                                        <span class="header__icon-item-multiply">x</span>
+                                                        <span class="header__icon-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__icon-item-body">
+                                                    <span class="header__icon-item-description">Classify: Men</span>
+                                                    <span class="header__icon-item-remove">Delete</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/new3.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <div class="header__icon-item-head">
+                                                    <h5 class="header__icon-item-name">Kurtis, Tunics & Tops</h5>
+                                                    <div class="header__icon-item-price-wrap">
+                                                        <span class="header__icon-item-price">$280</span>
+                                                        <span class="header__icon-item-multiply">x</span>
+                                                        <span class="header__icon-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__icon-item-body">
+                                                    <span class="header__icon-item-description">Classify: Women</span>
+                                                    <span class="header__icon-item-remove">Delete</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/new2.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <div class="header__icon-item-head">
+                                                    <h5 class="header__icon-item-name">Round Neck T-shirt</h5>
+                                                    <div class="header__icon-item-price-wrap">
+                                                        <span class="header__icon-item-price">$120</span>
+                                                        <span class="header__icon-item-multiply">x</span>
+                                                        <span class="header__icon-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__icon-item-body">
+                                                    <span class="header__icon-item-description">Classify: Men</span>
+                                                    <span class="header__icon-item-remove">Delete</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="cart.html" class="header__icon-view-icon btn btn--primary btn-color-white">View cart</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-fonticon-list header__wrap hide-on-mobile">
+                            <div class="header__navbar-fonticon-link icon__wrap">
+                                <a href="#">
+                                    <i class="header__navbar-fonticon-icon fa-regular fa-heart"></i>
+                                    <span class="header__icon-notice">8</span>
+                                </a>
+
+                                <!-- No icon class = header__icon-list--no-icon -->
+                                <div class="header__list">
+                                    <img src="../assets/img/no-cart.png" alt="" class="header__icon-list--no-icon header__icon-no-icon-img">
+                                    <span class="header__icon-list--no-icon header__icon-list--no-icon-msg">Chưa có sản phẩm</span>
+
+                                    <!-- Have icon -->
+                                    <h4 class="header__icon-heading">Favorite product</h4>
+                                    <ul class="header__icon-list-items">
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/new1.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <h5 class="header__icon-item-name">Yellow T-Shirt</h5>
+                                                <span class="header__icon-item-description">Classify: Kids</span>
+                                            </div>
+                                            <div class="header__icon-icon">
+                                                <i class="fa-solid fa-heart header__icon-icon-active"></i>
+                                                <i class="fa-regular fa-heart header__icon-icon-no-active"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/new2.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <h5 class="header__icon-item-name">Round Neck T-shirt</h5>
+                                                <span class="header__icon-item-description">Classify: Men</span>
+                                            </div>
+                                            <div class="header__icon-icon">
+                                                <i class="fa-solid fa-heart header__icon-icon-active"></i>
+                                                <i class="fa-regular fa-heart header__icon-icon-no-active"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/new3.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <h5 class="header__icon-item-name">Kurtis, Tunics & Tops</h5>
+                                                <span class="header__icon-item-description">Classify: Women</span>
+                                            </div>
+                                            <div class="header__icon-icon">
+                                                <i class="fa-solid fa-heart header__icon-icon-active"></i>
+                                                <i class="fa-regular fa-heart header__icon-icon-no-active"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/new4.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <h5 class="header__icon-item-name">Ethnic Kurti</h5>
+                                                <span class="header__icon-item-description">Classify: Women</span>
+                                            </div>
+                                            <div class="header__icon-icon">
+                                                <i class="fa-solid fa-heart header__icon-icon-active"></i>
+                                                <i class="fa-regular fa-heart header__icon-icon-no-active"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/treding1.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <h5 class="header__icon-item-name">Kurti Full Sleev</h5>
+                                                <span class="header__icon-item-description">Classify: Kids</span>
+                                            </div>
+                                            <div class="header__icon-icon">
+                                                <i class="fa-solid fa-heart header__icon-icon-active"></i>
+                                                <i class="fa-regular fa-heart header__icon-icon-no-active"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/treding2.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <h5 class="header__icon-item-name">Silk Saree - Printied</h5>
+                                                <span class="header__icon-item-description">Classify: Women</span>
+                                            </div>
+                                            <div class="header__icon-icon">
+                                                <i class="fa-solid fa-heart header__icon-icon-active"></i>
+                                                <i class="fa-regular fa-heart header__icon-icon-no-active"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/treding3.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <h5 class="header__icon-item-name">Multi Purpose Jacket</h5>
+                                                <span class="header__icon-item-description">Classify: Men</span>
+                                            </div>
+                                            <div class="header__icon-icon">
+                                                <i class="fa-solid fa-heart header__icon-icon-active"></i>
+                                                <i class="fa-regular fa-heart header__icon-icon-no-active"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__icon-item">
+                                            <img src="../assets/img/product/treding4.png" alt="" class="header__icon-img">
+                                            <div class="header__icon-item-info">
+                                                <h5 class="header__icon-item-name">Jacket</h5>
+                                                <span class="header__icon-item-description">Classify: Men</span>
+                                            </div>
+                                            <div class="header__icon-icon">
+                                                <i class="fa-solid fa-heart header__icon-icon-active"></i>
+                                                <i class="fa-regular fa-heart header__icon-icon-no-active"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="cart.html" class="header__icon-view-icon btn btn--primary hide-heart"></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-fonticon-list header__wrap hide-on-mobile-tablet">
+                            <div class="header__navbar-fonticon-link icon__wrap">
+                                <a href="">
+                                    <i class="header__navbar-fonticon-icon header__user-notice fa-regular fa-user"></i>
+                                </a>
+                                <div class="header__list">
+                                    <button class="btn-signup btn--primary"><a href="login.html">Sign in</a></button>
+                                    <div class="fogot-reg">
+                                        <span class="fogot">Don’t have an accout?</span>
+                                        <span class="reg">
+                                            <a href="register.html" class="reg-link">Register</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Navbar Table - Mobile -->
+                        <li class="hide-on-pc header__navbar-fonticon-list header__wrap">
+                            <div class="header__navbar-fonticon-link icon__wrap">
+
+                                <label for="nav-mobile-input" class="nav__bars-btn">
+                                        <i class="header__navbar-fonticon-icon fa-solid fa-bars"></i>
+                                </label>
+
+                                <input type="checkbox" hidden class="nav__input" name="" id="nav-mobile-input">
+
+                                <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                                <!-- Nav table - mobile -->
+                                <nav class="nav__table-mobile">
+                                    <div class="nav__table-mobile-user-close">
+                                        <div class="nav__table-mobile-user">
+                                            <div class="nav__table-mobile-avatar">
+                                                <img src="../assets/img/avater.jpg" alt="" class="nav__table-mobile-avatar-img">
+                                            </div>
+                                            <div class="nav__table-mobile-avatar-info">
+                                                <div class="nav__table-mobile-avatar-name">Le Van Hieu</div>
+                                                <div class="nav__table-mobile-avatar-mail">hieulv.2305@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <label for="nav-mobile-input" class="nav__table-mobile-close">
+                                            <i class="nav__table-mobile-close-icon fa-solid fa-xmark"></i>
+                                        </label>
+                                    </div>
+                                    <ul class="header__navbar-table-mobile-list">
+                                        <li class="header__navbar-table-mobile-item">
+                                            <i class="fa-solid fa-house"></i>
+                                            <a href="../index.html" class="header__navbartable-mobile-link">Home</a>
+                                        </li>
+                                        <li class="header__navbar-table-mobile-item">
+                                            <i class="fa-solid fa-shirt"></i>
+                                            <a href="#newarrivals" class="header__navbartable-mobile-link">New Arrivals</a>
+                                            <div class="new__img">
+                                                <!-- <img src="assets/img/new.png" alt="" class="header__navbar-link-new"> -->
+                                            </div>
+                                        </li>
+                                        <li class="header__navbar-table-mobile-item">
+                                            <i class="fa-solid fa-user"></i>
+                                            <a href="./login.html" class="header__navbartable-mobile-link">Account</a>
+                                        </li>
+                                        <li class="header__navbar-table-mobile-item">
+                                            <i class="fa-solid fa-right-from-bracket"></i>
+                                            <a href="#" class="header__navbartable-mobile-link">Log out</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="app__content">
+                    <div class="checkout">
+                        <div class="col l-6 m-12 c-12">
+                            <h2 class="checkout__heading">BILLING ADDRESS</h2>
+                            <div class="checkout__info">
+                                <div class="col l-6 m-6 c-6">
+                                    <!-- Name -->
+                                    <div class="checkout__info-all">
+                                        <label for="" class="checkout__info-heading" id="ten">Name</label>
+                                        <input type="text" class="checkout__info-input" placeholder="Your full name">
+                                    </div>
+                                    <!-- Phone number -->
+                                    <div class="checkout__info-all">
+                                        <label for="" class="checkout__info-heading" id="phone">Phone number</label>
+                                        <input type="text" class="checkout__info-input" placeholder="+84 345678910">
+                                    </div>
+                                    <!-- Email -->
+                                    <div class="checkout__info-all">
+                                        <label for="" class="checkout__info-heading" id="mail">Email</label>
+                                        <input type="text" class="checkout__info-input" placeholder="123@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <!-- Address -->
+                                    <div class="checkout__info-all">
+                                        <label for="" class="checkout__info-heading" id="address">Address</label>
+                                        <input type="text" class="checkout__info-input" placeholder="123 ABC Stress">
+                                    </div>
+                                    <!-- Wards -->
+                                    <div class="checkout__info-all">
+                                        <label for="" class="checkout__info-heading" id="wards">Wards</label>
+                                        <input type="text" class="checkout__info-input" placeholder="12">
+                                    </div>
+                                    <!-- District -->
+                                    <div class="checkout__info-all">
+                                        <label for="" class="checkout__info-heading" id="district">District</label>
+                                        <input type="text" class="checkout__info-input" placeholder="District 1">
+                                    </div>
+                                    <!-- Province / City -->
+                                    <div class="checkout__info-all">
+                                        <label for="" class="checkout__info-heading" id="city">Province / City</label>
+                                        <input type="text" class="checkout__info-input" placeholder="Ho Chi Minh City">
+                                    </div>
+
+                                    <!-- Province / City -->
+                                    <div class="checkout__info-all">
+                                        <label for="" class="checkout__info-heading bang">Province / City</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="kq"></div>
+                        </div>
+
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__total">
+                                <h2 class="checkout__heading">ORDER TOTAL</h2>
+                                <div class="checkout__info-product-all">
+                                    <div class="checkout__info-product">
+                                        <h3 class="checkout__info-heading">Products</h3>
+                                        <h3 class="checkout__info-price"></h3>
+                                    </div>
+                                    <div class="checkout__info-product-item">
+                                        <span class="checkout__info-product-name">Multi Purpose Jacket</span>
+                                        <span class="checkout__info-product-qnt">1</span>
+                                        <span class="checkout__info-product-price">$510</span>
+                                    </div>
+
+                                    <div class="checkout__info-product-item">
+                                        <span class="checkout__info-product-name">Kurtis, Tunicp & Tops</span>
+                                        <span class="checkout__info-product-qnt">1</span>
+                                        <span class="checkout__info-product-price">$280</span>
+                                    </div>
+
+                                    <div class="checkout__info-product-item">
+                                        <span class="checkout__info-product-name">Rounds Necks T-shirt</span>
+                                        <span class="checkout__info-product-qnt">1</span>
+                                        <span class="checkout__info-product-price">$120</span>
+                                    </div>
+                                    <hr>
+
+                                    <div class="checkout__info-product checkout__info-product--mt10">
+                                        <h3 class="checkout__info-heading">Subtotal</h3>
+                                        <h3 class="checkout__info-price">$910</h3>
+                                    </div>
+
+                                    <div class="checkout__info-product">
+                                        <h3 class="checkout__info-heading">Shipping</h3>
+                                        <h3 class="checkout__info-price">$5</h3>
+                                    </div>
+                                    <hr>
+
+                                    <div class="checkout__info-product checkout__info-product-total">
+                                        <h3 class="checkout__info-heading checkout__info-heading-total">Total</h3>
+                                        <h3 class="checkout__info-price checkout__info-price-total">$915</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment__service">
+                                <h2 class="checkout__heading">PAYMENT METHODS</h2>
+                                <div class="payment__service-list">
+                                    <!-- Online -->
+                                    <div class="payment__service-items">
+                                        <div class="payment__service-items-title">
+                                            <input type="checkbox" name="" id="check-input" class="payment__service-items-input">
+                                            <label for="check-input" class="payment__service-items-name">Online payment</label>
+                                            <label for="check-input" class="payment__service-items-sevice">
+                                                <a href="#" class="payment__service-items-link"><img src="./img/pay/momo.webp" alt="" class="payment__service-items-img"></a>
+                                                <a href="#" class="payment__service-items-link"><img src="./img/pay/zalo.png" alt="" class="payment__service-items-img"></a>
+                                                <a href="#" class="payment__service-items-link"><img src="./img/pay/viettel.jpg" alt="" class="payment__service-items-img"></a>
+                                                <a href="#" class="payment__service-items-link"><img src="./img/pay/napas.png" alt="" class="payment__service-items-img"></a>
+                                                <a href="#" class="payment__service-items-link"><img src="./img/pay/visa.png" alt="" class="payment__service-items-img"></a>
+                                            </label>
+                                        </div>
+                                        <!-- Tiền mặt -->
+                                        <div class="payment__service-items">
+                                            <div class="payment__service-items-title">
+                                                <input type="checkbox" name="" id="check-input" class="payment__service-items-input">
+                                                <label for="check-input" class="payment__service-items-name">Payment on delivery</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-order" type="button"><a href="successorder.html" class="btn-order-link" onclick="checkout()">ORDER</a></button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer__submails">
+                    <div class="row sm-gutter">
+                        <div class="col l-6 l-o-3 m-6 m-o-3 c-12">
+                            <img src="../assets/img/mail.png" alt="" class="footer__submails-img">
+                            <h3 class="footer__submails-heading">Subscibe Newsletter</h3>
+                            <p class="footer__submails-sub-heading">Subscribe to our email and get updates right in your inbox</p>
+                            <div class="footer__submails-input">
+                                <input type="email" placeholder="Enter Your Email" class="input-text" id="email" required>
+                                <div class="input-submit" onclick="checkmail()" value="submit">
+                                    <img src="../assets/img/send.png" alt="" class="footer__submails-input-img">
+                                </div>
+                            </div>
+                            <div id="toast">
+                                <!-- Success -->
+                                <!-- <div class="toast toast--success">
+                                        <div class="toast__icon">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <div class="toast__body">
+                                            <div class="toast__title">Success</div>
+                                            <div class="toast__mess">Font Awesome is hiring a product designer to help us take Shoelace to the next level.</div>
+                                        </div>
+                                        <div class="toast__close">
+                                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                                        </div>
+                                    </div> -->
+
+                                <!-- Error -->
+                                <!-- <div class="toast toast--error">
+                                        <div class="toast__icon">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <div class="toast__body">
+                                            <div class="toast__title">Error</div>
+                                            <div class="toast__mess">Font Awesome is hiring a product designer to help us take Shoelace.</div>
+                                        </div>
+                                        <div class="toast__close">
+                                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                                        </div>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__fonticon">
+                    <div class="row sm-gutter">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="footer__fonticon-all">
+                                <div class="footer__fonticon-icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="footer__fonticon-icon">
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                                <div class="footer__fonticon-icon">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <div class="row sm-gutter">
+                        <div class="col l-3 m-12 c-12">
+                            <div class="footer__logo">
+                                <a href="../index.html" class="header__logo-link">
+                                    <img src="../assets/img/logo.png" alt="" class="header__logo-img">
+                                </a>
+                            </div>
+                            <p class="footer__info-forme">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
+                        </div>
+
+                        <div class="col l-3 m-4 c-4">
+                            <h3 class="footer__info-heading">Help</h3>
+                            <p class="footer__info-sub-heading">Privacy Policy</p>
+                            <p class="footer__info-sub-heading">Shipping</p>
+                            <p class="footer__info-sub-heading">Refund Policy</p>
+                            <p class="footer__info-sub-heading">Track Your Order</p>
+                        </div>
+
+                        <div class="col l-3 m-4 c-4">
+                            <h3 class="footer__info-heading">Store</h3>
+                            <p class="footer__info-sub-heading">Men Fashion</p>
+                            <p class="footer__info-sub-heading">Women Fashion</p>
+                            <p class="footer__info-sub-heading">Kids Fashion</p>
+                            <p class="footer__info-sub-heading">Other</p>
+                        </div>
+
+                        <div class="col l-3 m-4 c-4">
+                            <h3 class="footer__info-heading">Support</h3>
+                            <p class="footer__info-sub-heading">Feedback</p>
+                            <p class="footer__info-sub-heading">Contact us</p>
+                            <p class="footer__info-sub-heading">Download app</p>
+                            <p class="footer__info-sub-heading">Terms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        //<![CDATA[
+        $('input.cart__table-qnt').each(function() {
+                var $this = $(this),
+                    qty = $this.parent().find('.is-form'),
+                    min = Number($this.attr('min')),
+                    max = Number($this.attr('max'))
+                if (min == 0) {
+                    var d = 0
+                } else d = min
+                $(qty).on('click', function() {
+                    if ($(this).hasClass('minus')) {
+                        if (d > min) d += -1
+                    } else if ($(this).hasClass('plus')) {
+                        var x = Number($this.val()) + 1
+                        if (x <= max) d += 1
+                    }
+                    $this.attr('value', d).val(d)
+                })
+            })
+            //]]>
+    </script>
+</body>
+
+</html>
